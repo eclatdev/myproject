@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker'); 
+
+/* 
+  # Author: Dharma Raj Poudel
+  # Author URL: drpoudel.com.np
+  # Date: 16th May 2018
+  #  
+
+  Resetting all elements magin and padding
+
+  */
+*{
+	margin:0px;
+	padding:0px;
+}
+
+
+body{
+	background-image: url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+	
+}
+
+#wrapper{
+	width:960px;
+	min-height:500px;
+	background-color:#cccddd;
+	opacity: 0.7;
+	margin:auto auto;
+}
+
+.row{
+	min-height:1px;
+}
+
+.column1{
+	width:25%;
+	min-height:20px;
+	float:left;
+}
+.column2{
+	width:50%;
+	min-height:20px;
+	float:left;
+}
+
+.column3 {
+     width: 75%;
+     min-height: 25px;
+     float:left;
+ }
+
+ .column4 {
+     width: 100%;
+     min-height: 25px;
+     float:left;
+ }
+
+.banner{
+	width:100%;
+	height:150px;
+	background-image: url('../images/banner.jpg');
+	background-repeat: no-repeat;
+
+}
+
+.clear{
+	clear:both;
+}
+
+#col{
+
+}
+
+#col img{
+
+	height:auto;
+	border-radius:0px 25px 0px 25px;
+	margin:3px;
+	padding:3px;
+	opacity:0.7;
+
+}
+
+
+#col img:hover{
+	opacity:1;
+	border-bottom:3px solid #ccddcc;
+	border-right:3px solid #ccddcc;
+}
+
+.img-circle{
+	border-radius:50%;
+}
+
+.menu{
+	width:100%;
+	min-height:50px;
+	background-color: #bbbbbb;
+}
+
+.menu ul{
+	list-style-type: none;
+	float:right;
+	
+}
+
+.menu ul li{
+	display:inline;
+	margin-right:20px;
+	width:100px;
+}
+
+.menu ul li a{
+	text-decoration:none;
+}
+
+.menu ul li a:hover{
+	text-decoration:underline;
+	
+
+}
+
+/* Drop Down Menu*/
+a {
+  text-decoration: none;
+}
+
+nav {
+    font-family: monospace;
+}
+
+ul {
+  background: darkorange;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    color: #fff;
+  background: darkorange;
+    display: inline;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+  transition-duration: 0.5s;
+}
+  
+li a {
+  color: #fff;
+}
+
+li:hover {
+    background: green;
+    cursor: pointer;
+}
+
+ul li ul {
+    background: orange;
+    visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+    position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+    left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+    clear: both;
+  width: 100%;
+}
+
+.sitetitle{
+  position:relative;
+  top:90px;
+  margin-left:170px;
+  font-family:'Permanent Marker';
+  font-size:50px;
+  font-weight:500;
+  font-variant:small-caps;
+  color:#ff0000;
+}
+
+/* Drop Down Menu */
+
+
+/* For Print*/
+
+@media print {
+
+/* hide all the images while priting*/
+img {
+  visibility:hidden;
+}
+}
+
+@media(max-width:540px)
+{
+
+  .sitetitle{
+    font-size:20px;
+    color:#00ff00;
+  }
+
+}
+
+
+.social{
+
+  position:fixed;
+  top:300px;
+  width:75px;
+  min-height:120px;
+  right:0px;
+}
+ .social ul{
+  list-style-type:none;
+ }
+ .social ul li{
+  display:block;
+ }
+
+.fixed{
+  position:fixed;
+  z-index:9999;
+  width:960px;
+  min-height:200px;
+
+}
+
+.nonfixed{
+  width:960px;
+  z-index:9998;
+  position:absolute;
+  top:205px;
+}
